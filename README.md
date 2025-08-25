@@ -1,55 +1,60 @@
-📦 Proyecto Backend: Gestión de Usuarios y Autenticación
-Descripción
+🚀 Proyecto Backend Profesional - Gestión de Usuarios
+Este es un backend robusto y modular desarrollado con Node.js, Express y PostgreSQL. Está diseñado para gestionar usuarios, roles y autenticación, siguiendo estándares de la industria y las mejores prácticas de desarrollo.
 
-Este proyecto es un backend escalable desarrollado con Node.js, Express y PostgreSQL, diseñado para manejar usuarios, autenticación y roles.
-El proyecto está pensado para ser usado como base profesional, completamente testable, modular y listo para integrarse con frontends modernos o servicios externos.
+💡 Características Destacadas
+Autenticación Segura: Implementación de JWT para el control de acceso y bcrypt para el almacenamiento seguro de contraseñas.
 
-Cuenta con:
+Arquitectura Modular y Escalable: Lógica de negocio organizada en capas (rutas, controladores, modelos), facilitando la escalabilidad y el mantenimiento del código.
 
-Registro y login de usuarios con JWT.
+Tipado Fuerte: Desarrollado en TypeScript para una mayor seguridad y legibilidad del código.
 
-Hashing de contraseñas con bcrypt.
+Mapeo Objeto-Relacional: Uso de TypeORM para una interacción fluida y orientada a objetos con la base de datos PostgreSQL.
 
-Estructura modular: controladores, rutas y servicios separados.
+Pruebas Automáticas: Cobertura de tests unitarios y de integración con Jest y Supertest, garantizando la fiabilidad de los endpoints.
 
-Tests automáticos con Jest y Supertest.
+Contenerización: Configuración lista para Docker, simplificando el entorno de desarrollo y el despliegue.
 
-Configuración lista para TypeScript, TypeORM y Docker.
+⚙️ Tecnologías
+Runtime: Node.js
 
-Buenas prácticas de desarrollo: patrones de diseño, manejo de errores, middlewares.
+Framework: Express
 
-Tecnologías
+Base de Datos: PostgreSQL
 
-Node.js – Runtime backend.
+ORM: TypeORM
 
-TypeScript – Tipado estático y seguridad.
+Lenguaje: TypeScript
 
-Express – Framework HTTP.
+Autenticación: JWT (jose), bcrypt
 
-TypeORM – ORM para PostgreSQL.
+Testing: Jest, Supertest
 
-PostgreSQL – Base de datos relacional.
+📂 Estructura del Proyecto
+src/
+├─ app.ts           # Configuración de Express y middlewares
+├─ server.ts        # Inicio del servidor
+├─ routes/          # Gestión de rutas del API
+├─ controllers/     # Lógica de negocio (controladores)
+├─ models/          # Entidades de la base de datos
+├─ config/          # Configuración de la DB con TypeORM
+tests/
+├─ user.test.ts     # Pruebas de endpoints de usuario
+├─ auth.test.ts     # Pruebas de autenticación
+🛠 Configuración e Instalación
+Clona el repositorio:
 
-Jest + Supertest – Testing unitario y de integración.
-
-bcrypt – Encriptación de contraseñas.
-
-JWT (jose) – Autenticación basada en tokens.
-
-Instalación
-
-Clonar el repositorio:
+Bash
 
 git clone https://github.com/hxcCoder/proyect_management.git
 cd proyect_management
+Instala las dependencias:
 
-
-Instalar dependencias:
+Bash
 
 npm install
+Crea un archivo .env en la raíz del proyecto y añade tus variables de entorno:
 
-
-Configurar variables de entorno en .env:
+Fragmento de código
 
 PORT=3000
 DB_HOST=localhost
@@ -57,75 +62,25 @@ DB_PORT=5432
 DB_USER=tu_usuario
 DB_PASSWORD=tu_contraseña
 DB_NAME=tu_base_de_datos
-JWT_SECRET=tu_secreto
+JWT_SECRET=tu_secreto_secreto
 JWT_EXPIRES_IN=1d
+Inicia la base de datos. Si tienes Docker instalado, usa:
 
-
-Levantar la base de datos (PostgreSQL o con Docker):
+Bash
 
 docker-compose up -d
+Ejecuta el servidor en modo desarrollo:
 
-
-Compilar TypeScript:
-
-npm run build
-
-
-Iniciar servidor:
+Bash
 
 npm run dev
+🧪 Pruebas Automatizadas
+Para ejecutar los tests, usa el siguiente comando. Se han configurado tests de integración para los endpoints de registro, login y gestión de usuarios.
 
-Estructura del proyecto
-src/
-├─ app.ts           # Configuración de Express y middlewares
-├─ server.ts        # Inicio del servidor
-├─ routes/          # Definición de rutas
-├─ controllers/     # Lógica de negocio
-├─ models/          # Entidades de la base de datos
-├─ config/          # Configuración de la DB (TypeORM)
-tests/
-├─ user.test.ts     # Tests de endpoints de usuario
-├─ auth.test.ts     # Tests de autenticación
-
-Scripts disponibles
-npm run dev       # Levanta el servidor en modo desarrollo
-npm run build     # Compila TypeScript
-npm run start     # Ejecuta el servidor compilado
-npm run test      # Corre tests con Jest
-
-Tests
-
-Se incluyen tests con Jest y Supertest para asegurar que los endpoints principales funcionen correctamente:
-
-Registro de usuarios
-
-Login y autenticación con JWT
-
-Listado de usuarios
-
-Para ejecutar:
+Bash
 
 npm run test
+👤 Autor
+Benjamin Millalonco - GitHub
 
-
-Los tests no requieren levantar el servidor real gracias a la separación de app.ts y server.ts.
-
-Buenas prácticas implementadas
-
-Separación de capas: rutas, controladores y servicios.
-
-Uso de TypeScript para tipado fuerte.
-
-Seguridad: passwords con bcrypt, JWTs firmados.
-
-Configuración de DB y servidor mediante variables de entorno.
-
-Preparado para tests y CI/CD.
-
-Compatible con Docker para despliegue rápido.
-
-Autor
-
-Benjamin Millalonco – GitHub
-
-Proyecto desarrollado como demostración profesional de backend escalable y modular.
+Este proyecto representa una demostración profesional de mis habilidades en el desarrollo de backends escalables, seguros y listos para producción.
