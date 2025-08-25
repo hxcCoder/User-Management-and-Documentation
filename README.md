@@ -80,7 +80,8 @@ Ejecuta el servidor en modo desarrollo:
 Bash
 
 npm run dev
-**🧪 Pruebas Automatizadas**
+
+🧪 Pruebas Automatizadas
 ---
 Para ejecutar los tests, usa el siguiente comando. Se han configurado pruebas de integración para los endpoints de registro, login y gestión de usuarios.
 
@@ -88,6 +89,6 @@ Bash
 
 npm run test
 
-**👤 Autor**
+👤 Autor
 ---
 Benjamin Millalonco - GitHub
