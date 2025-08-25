@@ -2,7 +2,9 @@
 ---
 Este es un backend robusto y modular desarrollado con Node.js, Express y PostgreSQL. Está diseñado para gestionar usuarios, roles y autenticación, siguiendo estándares de la industria y las mejores prácticas de desarrollo.
 
-**✨ Características Clave**
+✨ Características Clave
+-
+---
 Seguridad y Autenticación: Implementación de JWT para el control de acceso y bcrypt para el almacenamiento seguro de contraseñas.
 
 Arquitectura Escalable: Código organizado en capas (rutas, controladores y modelos) para facilitar el mantenimiento y la escalabilidad.
