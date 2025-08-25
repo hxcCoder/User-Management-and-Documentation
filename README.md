@@ -3,7 +3,6 @@
 Este es un backend robusto y modular desarrollado con Node.js, Express y PostgreSQL. Está diseñado para gestionar usuarios, roles y autenticación, siguiendo estándares de la industria y las mejores prácticas de desarrollo.
 
 ✨ Características Clave
--
 ---
 Seguridad y Autenticación: Implementación de JWT para el control de acceso y bcrypt para el almacenamiento seguro de contraseñas.
 
@@ -17,7 +16,8 @@ Pruebas Automatizadas: Cobertura de tests unitarios y de integración con Jest y
 
 Contenerización: Configuración lista para Docker, simplificando el entorno de desarrollo y el despliegue.
 
-**⚙️ Tecnologías**
+⚙️ Tecnologías
+---
 Runtime: Node.js
 
 Framework: Express
@@ -32,7 +32,8 @@ Autenticación: JWT (jose), bcrypt
 
 Testing: Jest, Supertest
 
-**📂 Estructura del Proyecto**
+📂 Estructura del Proyecto
+---
 src/
 ├─ app.ts           # Configuración principal de Express
 ├─ server.ts        # Inicio del servidor
@@ -44,7 +45,8 @@ tests/
 ├─ user.test.ts     # Pruebas de endpoints de usuario
 ├─ auth.test.ts     # Pruebas de autenticación
 
-**🚀 Instalación y Uso**
+🚀 Instalación y Uso
+---
 Clona el repositorio:
 
 Bash
@@ -79,6 +81,7 @@ Bash
 
 npm run dev
 **🧪 Pruebas Automatizadas**
+---
 Para ejecutar los tests, usa el siguiente comando. Se han configurado pruebas de integración para los endpoints de registro, login y gestión de usuarios.
 
 Bash
@@ -86,4 +89,5 @@ Bash
 npm run test
 
 **👤 Autor**
+---
 Benjamin Millalonco - GitHub
