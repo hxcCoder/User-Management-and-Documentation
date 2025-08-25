@@ -32,19 +32,6 @@ Autenticación: JWT (jose), bcrypt
 
 Testing: Jest, Supertest
 
-📂 Estructura del Proyecto
----
-src/
-├─ app.ts           # Configuración principal de Express
-├─ server.ts        # Inicio del servidor
-├─ routes/          # Rutas del API
-├─ controllers/     # Lógica de negocio
-├─ models/          # Entidades de la base de datos
-├─ config/          # Configuración de la DB con TypeORM
-tests/
-├─ user.test.ts     # Pruebas de endpoints de usuario
-├─ auth.test.ts     # Pruebas de autenticación
-
 🚀 Instalación y Uso
 ---
 Clona el repositorio:
