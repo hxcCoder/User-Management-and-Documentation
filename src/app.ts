@@ -1,14 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import userRoutes from './routes/userRoutes';
 import authRoutes from './routes/authRoutes';
-import { AppDataSource } from './config/postgres';
 
 const app = express();
+
+// Middlewares
 app.use(bodyParser.json());
-app.use('/auth', authRoutes);
 
-AppDataSource.initialize()
-  .then(() => console.log('📦 Base de datos conectada'))
-  .catch((err) => console.error('❌ Error al conectar DB:', err));
+// Rutas
+app.use('/api/users', userRoutes);
+app.use('/api/auth', authRoutes);
 
-export default app;
+export { app }; // Named export, para tests
