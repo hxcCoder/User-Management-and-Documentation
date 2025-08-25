@@ -1,5 +1,4 @@
-##🚀 Proyecto Backend Profesional##- Gestión de Usuarios
-
+🚀 Proyecto Backend Profesional- Gestión de Usuarios
 ---
 Este es un backend robusto y modular desarrollado con Node.js, Express y PostgreSQL. Está diseñado para gestionar usuarios, roles y autenticación, siguiendo estándares de la industria y las mejores prácticas de desarrollo.
 
